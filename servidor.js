@@ -1,8 +1,8 @@
-var http = requiere('http');
+var http = require('http');
 
-http.createServer(function(request, respuesta){
+http.createServer(function(peticion, respuesta){
     respuesta.writeHead( 200, {'Content-Type': 'text/plain'});
-    respuesta.write("Hola Mundo");    
+    respuesta.write("Hola Nginx");    
     respuesta.end();
 
 }).listen(3000, 'localhost');

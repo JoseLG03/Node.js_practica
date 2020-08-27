@@ -15,7 +15,7 @@ http.createServer(function(peticion, respuesta){
             break;    
     }   
 
-    fs.readFile(".plantillas/" + plantilla , function( error , datos){
+    fs.readFile("./plantillas/" + plantilla , function( error , datos){
         respuesta.write(datos);
         respuesta.end();
     } );

@@ -6,4 +6,4 @@ http.createServer(function(request, respuesta){
     respuesta.end();
 }).listen(3000, 'localhost');
 
-console.log('Servidor arriba en http://localhost:3000');
+console.log('Servidor arriba http://localhost:3000');

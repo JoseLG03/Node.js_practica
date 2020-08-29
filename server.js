@@ -2,7 +2,7 @@ var http = require('http');
 
 http.createServer(function(request, respuesta){
     respuesta.writeHead( 200, {'Content-Type': 'text/plain'});
-    respuesta.write("Vamos muchachos");
+    respuesta.write("Vamos mucacos");
     respuesta.end();
 }).listen(3000, 'localhost');
 

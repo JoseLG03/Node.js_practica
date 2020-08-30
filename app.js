@@ -2,10 +2,13 @@ var express = require('express');
 
 var app = express();
 
+const pug = require('pug');
+
 app.use(express.static(__dirname + '/public') );
 
 app.get('/', (peticion, respuesta)=>{
-    respuesta.sendFile(index.html);
+    //la información por defecto sera la html de public. Si existe conflicto con el nombre del archivo
+    respuesta.render('index.pug');
 })
 
 app.listen( 3000, ()=>{

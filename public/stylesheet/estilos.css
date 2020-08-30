@@ -1,0 +1,58 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+h1{
+	background: #303030;
+	margin: 0;
+	padding: 10px;
+	color: #fff;
+	font-weight: 300;
+	text-align: center;
+}
+h1 a{
+	text-decoration: none;
+	color: #fff;
+}
+
+p{
+	background: silver;
+	width: 40%;
+	margin: 50px auto;
+	padding:10px;
+}
+
+img{
+	display: block;
+	margin: auto;
+}
+
+.comprar{ display: block; 
+	width: 100px; 
+	height: 30px;
+	background: red;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	line-height: 30px;
+	margin: 20px auto;
+	border-radius: 5px;
+}
+.comprar:hover{
+	background: green;
+	color:#000;
+}
+
+.contenedor{
+	max-width: 700px;
+	margin: auto;
+	padding:0;
+}
+
+.item{
+	margin: 30px 0;
+	width: 50%;
+	float: left;
+}

@@ -2,10 +2,8 @@ var express = require('express');
 
 var app = express();
 
-app.use(express.static(__dirname + '/public') );
-
 app.get('/', (peticion, respuesta)=>{
-    respuesta.sendFile(index.html);
+    respuesta.send('Hola mundo con Express');
 })
 
 app.listen( 3000, ()=>{

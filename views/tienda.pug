@@ -1,0 +1,15 @@
+doctype html
+html(lang = "esp")
+
+head
+    title Mi tienda 
+    link(rel = "stylesheet", href = "/stylesheet/estilos.css")
+    
+    body   
+        h1
+            a(href = "#") Tienda de Playeras
+        each camiseta in playera
+            div.item
+                h2 Playera #{camiseta.color}
+                img(src = camiseta.imagen, alt = "playera Naranja")        
+    

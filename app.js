@@ -41,6 +41,16 @@ app.get('/tienda/comprar/:color', (peticion, respuesta)=>{
     });
 })
 
+app.use( (peticion, respuesta)=>{
+
+    respuesta.status(400);
+
+    let urlError = peticion.originalUrl;
+
+    respuesta.render('404.pug', { textoError: urlError});
+
+});
+
 app.listen( 3000, ()=>{
     console.log("Escuhando en el puerto 3000");
 });

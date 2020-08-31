@@ -22,7 +22,6 @@ app.get('/', (peticion, respuesta)=>{
 })
 
 app.get('/tienda', (peticion, respuesta)=>{
-    //la información por defecto sera la html de public. Si existe conflicto con el nombre del archivo
     respuesta.render('tienda.pug',{
         playera: playerasArray
     });

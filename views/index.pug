@@ -3,22 +3,16 @@ html(lang = "esp")
 
 head
     title Mi tienda #{titulo}
-    
+    link(rel = "stylesheet", href = "/stylesheet/estilos.css")
+
     body        
     h1 
-        a( href= "") Bienvenido #{titulo}.
+        a( href= "/tienda") Bienvenido #{titulo}.
     div
         p Contamos con la mayor calidad y una excelente presentación.
         img(src ="images/camiseta1.png", alt = "Playera naranja")
     
-    h2 Nuestro catalogo de playeras
+    h2 
+        p
+            a( href= "/tienda") Catálogo
 
-    ul        
-        li Playera Naranja
-        img(src ="images/camiseta1.png", alt = "Playera naranja")    
-        li Playera Roja
-        img(src ="images/camiseta2.png", alt = "Playera roja")
-        li Playera Azul 
-        img(src ="images/camiseta3.png", alt = "Playera azul")
-        li Playera Verde
-        img(src ="images/camiseta4.png", alt = "Playera verde")

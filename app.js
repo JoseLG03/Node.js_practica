@@ -7,10 +7,10 @@ const pug = require('pug');
 app.use(express.static(__dirname + '/public') );
 
 playerasArray = [
-    {color:"Naranja", imagen: "images/camiseta1.png"},
-    {color:"Roja", imagen: "images/camiseta2.png"},
-    {color:"Azul", imagen: "images/camiseta3.png"},
-    {color:"Verde", imagen: "images/camiseta4.png"}
+    {color:"naranja", imagen: "/images/camiseta1.png"},
+    {color:"roja", imagen: "/images/camiseta2.png"},
+    {color:"azul", imagen: "/images/camiseta3.png"},
+    {color:"verde", imagen: "/images/camiseta4.png"}
 ];
 
 app.get('/', (peticion, respuesta)=>{
@@ -24,6 +24,20 @@ app.get('/', (peticion, respuesta)=>{
 app.get('/tienda', (peticion, respuesta)=>{
     respuesta.render('tienda.pug',{
         playera: playerasArray
+    });
+})
+
+app.get('/tienda/comprar/:color', (peticion, respuesta)=>{
+    
+    let datosDeCamiseta = playerasArray.filter( (item)=>{
+        if( peticion.params.color == item.color){
+            return item;
+        }
+    })[0];
+
+    respuesta.render('detalles.pug',{
+        color: peticion.params.color,
+        datos: datosDeCamiseta
     });
 })
 

@@ -11,5 +11,6 @@ head
         each camiseta in playera
             div.item
                 h2 Playera #{camiseta.color}
-                img(src = camiseta.imagen, alt = "playera Naranja")        
+                img(src = camiseta.imagen, alt = "playera Naranja")   
+                a(href = "/tienda/comprar/"+ camiseta.color, class = "comprar") Comprar     
     

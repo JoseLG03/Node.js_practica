@@ -19,7 +19,7 @@
     "compression": "^1.5.2",
     "method-override": "^2.3.0",
     "glob": "^6.0.4",
-    "mongoose": "^4.1.2",
+    "mongoose": "^5.7.5",
     "pug": "^2.0.3"
   },
   "devDependencies": {
